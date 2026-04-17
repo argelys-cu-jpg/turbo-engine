@@ -3,47 +3,76 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CookUnity — Integrated Organic Growth Plan</title>
+<title>CookUnity — Integrated organic growth plan</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-:root { --ink: #24272A; --muted: #5F6166; --faint: #8B8D92; --surf: #FFFFFF; --surf2: #F7F5F0; --surf3: #F0EEE9; --border: rgba(36,39,42,0.05); --border2: rgba(36,39,42,0.09); --accent: #FFB81C; --al: #FFF3CF; --am: #FFB81C; --teal: #2F8848; --tl: #E7F2EA; --blue: #475CC7; --bl: #E7EBFF; --amber: #FF6A14; --aml: #FFF0E5; --green: #2F8848; --gl: #E7F2EA; --red: #AA0061; --rl: #F8E6F0; --purple: #DB1984; --pl: #FBE8F4; --mono: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; --display: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; --body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; --r: 12px; --rl2: 18px;
+:root {
+  --ink: #24272A;
+  --muted: #5F6368;
+  --faint: #80868B;
+
+  --surf: #FFFFFF;
+  --surf2: #F8F9FA;
+  --surf3: #F3F4F4;
+
+  --border: rgba(36,39,42,0.06);
+  --border2: rgba(36,39,42,0.10);
+
+  --yellow: #FFB81C;
+  --charcoal: #24272A;
+  --white: #FFFFFF;
+  --maroon: #AA0061;
+
+  --sea: #475CC7;
+  --ranch: #FF6A14;
+  --earth: #2F8848;
+  --range: #DB1984;
+  --breakfast: #B8CDC2;
+  --specials: #BFA369;
+
+  --mono: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --display: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  --r: 14px;
+  --rl2: 24px;
 }
 @media (prefers-color-scheme: dark) { :root { --ink: #F4F0E8; --muted: #C8C0B3; --faint: #968F84; --surf: #1F2124; --surf2: #282B2F; --surf3: #181A1D; --border: rgba(255,255,255,0.10); --border2: rgba(255,255,255,0.18); --al: rgba(255,184,28,0.18); --tl: rgba(47,136,72,0.18); --bl: rgba(71,92,199,0.18); --aml: rgba(255,106,20,0.18); --gl: rgba(47,136,72,0.18); --rl: rgba(170,0,97,0.20); --pl: rgba(219,25,132,0.18); }
 }
-body { font-family: var(--body); background: #F8F9FA; color: var(--ink); font-size: 18px; line-height: 1.72; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
-.wrap { max-width: 1280px; margin: 0 auto; padding: 32px 24px 72px; } /* Header */
+body { font-family: var(--body); background: var(--surf3); color: var(--ink); font-size: 18px; line-height: 1.72; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+.wrap { max-width: 1280px; margin: 0 auto; padding: 24px 24px 80px; } /* Header */
 .hdr { margin-bottom: 2rem; padding: 1.5rem 1.5rem 1.75rem; border: 0.5px solid rgba(36,39,42,0.08); border-radius: 24px; background: linear-gradient(180deg, #FFB81C 0%, #F5B41B 100%); box-shadow: 0 12px 32px rgba(36,39,42,0.08); }
 .hdr-row { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
 .hdr-row > div { width: 100%; }
-.hdr { background: #FFFFFF; border-radius: 28px; padding: 32px; border: 1px solid rgba(36,39,42,0.06); box-shadow: 0 1px 2px rgba(36,39,42,0.04); }
+.hdr { background: var(--charcoal); border-radius: 32px; padding: 40px 32px 32px; border: 0; box-shadow: none; margin-bottom: 24px; }
 .wordmark { margin-bottom: 10px; }
 .logo-lockup { display:flex; align-items:center; gap:12px; margin-bottom:16px; }
-.logo-mark { display:block; height:72px; width:auto; max-width:420px; }
+.logo-mark { display:block; height:64px; width:auto; max-width:360px; }
 .logo-badge span { color:#fff; font-family: var(--body); font-size: 20px; font-weight:700; line-height:1; transform: translateY(-1px); }
 .logo-text { display:flex; flex-direction:column; gap:2px; }
 .logo-tag { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
 .wordmark { font-family: var(--mono); font-size: 12px; letter-spacing: 0.09em; text-transform: uppercase; color: var(--accent); display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.72); border: 0.5px solid rgba(216,90,48,0.18); border-radius: 999px; padding: 5px 10px; }
-.wordmark::before { content: ''; width: 8px; height: 8px; background: #1A73E8; border-radius: 50%; display: inline-block; }
-.hdr h1 { font-family: var(--body); font-size: 48px; font-weight: 700; line-height: 1.06; margin-bottom: 12px; color: #202124; letter-spacing: -0.03em; }
-.hdr p { font-size: 18px; color: #5F6368; line-height: 1.6; max-width: 900px; }
+.wordmark::before { content: ''; width: 8px; height: 8px; background: var(--yellow); border-radius: 50%; display: inline-block; }
+.hdr h1 { font-family: var(--body); font-size: 56px; font-weight: 700; line-height: 1.02; margin-bottom: 16px; color: var(--white); letter-spacing: -0.04em; max-width: 980px; }
+.hdr p { font-size: 20px; color: rgba(255,255,255,0.76); line-height: 1.55; max-width: 920px; }
 .hdr-meta { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
-.meta-pill { font-family: var(--body); font-size: 12px; font-weight: 500; letter-spacing: 0; background: rgba(255,255,255,0.78); border: 0.5px solid rgba(216,90,48,0.14); border-radius: 999px; padding: 6px 11px; color: var(--muted); } /* Nav */
-.nav { display: flex; gap: 8px; flex-wrap: wrap; margin: 24px 0 40px; }
-.nb { font-family: var(--body); font-size: 14px; font-weight: 600; letter-spacing: 0; text-transform: none; padding: 10px 14px; border-radius: 999px; border: 1px solid rgba(36,39,42,0.08); background: #FFFFFF; color: #3C4043; cursor: pointer; transition: all 0.12s; white-space: nowrap; }
+.meta-pill { font-family: var(--body); font-size: 13px; font-weight: 500; letter-spacing: 0; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.10); border-radius: 999px; padding: 8px 12px; color: rgba(255,255,255,0.88); } /* Nav */
+.nav { display: flex; gap: 10px; flex-wrap: wrap; margin: 24px 0 40px; }
+.nb { font-family: var(--body); font-size: 14px; font-weight: 600; letter-spacing: 0; text-transform: none; padding: 10px 16px; border-radius: 999px; border: 1px solid rgba(36,39,42,0.08); background: rgba(255,255,255,0.88); color: #3C4043; cursor: pointer; transition: all 0.12s; white-space: nowrap; }
 .nb:hover { background: var(--surf2); color: var(--ink); }
-.nb.active { background: #1A73E8; border-color: #1A73E8; color: #fff; }
+.nb.active { background: var(--charcoal); border-color: var(--charcoal); color: #fff; }
 .nb.risk { border-color: rgba(36,39,42,0.08); color: #3C4043; }
 .nb.risk.active { background: #1A73E8; border-color: #1A73E8; color: #fff; } /* Sections */
 .sec { display: none; }
 .sec.on { display: block; }
-.ey { font-family: var(--body); font-size: 14px; font-weight: 600; letter-spacing: 0; text-transform: none; color: #5F6368; margin-bottom: 10px; }
+.ey { font-family: var(--body); font-size: 15px; font-weight: 600; letter-spacing: 0; text-transform: none; color: var(--earth); margin-bottom: 10px; }
 .ey.r { color: #5F6368; }
-.st { font-family: var(--body); font-size: 38px; font-weight: 700; line-height: 1.12; margin-bottom: 12px; letter-spacing: -0.03em; color: #202124; max-width: 900px; }
-.ss { font-size: 18px; color: #5F6368; line-height: 1.7; margin-bottom: 32px; max-width: 900px; }
-h3 { font-family: var(--body); font-size: 24px; font-weight: 600; letter-spacing: -0.01em; text-transform: none; color: #202124; margin-bottom: 12px; line-height: 1.3; }
-p { font-size: 18px; color: #5F6368; line-height: 1.72; margin-bottom: 16px; max-width: 900px; }
+.st { font-family: var(--body); font-size: 40px; font-weight: 700; line-height: 1.08; margin-bottom: 12px; letter-spacing: -0.03em; color: #202124; max-width: 960px; }
+.ss { font-size: 19px; color: #5F6368; line-height: 1.68; margin-bottom: 32px; max-width: 960px; }
+h3 { font-family: var(--body); font-size: 26px; font-weight: 600; letter-spacing: -0.02em; text-transform: none; color: #202124; margin-bottom: 14px; line-height: 1.25; }
+p { font-size: 18px; color: #5F6368; line-height: 1.72; margin-bottom: 16px; max-width: 960px; }
 p:last-child { margin-bottom: 0; }
 strong { font-weight: 500; }
 hr.div { border: none; border-top: 0.5px solid var(--border); margin: 1.5rem 0; }
@@ -285,13 +314,260 @@ tr.ph-scale { background: rgba(83,74,183,0.04); } /* Sep risk blocks */
 
 @media (max-width: 620px) { .logo-mark { height: 88px; max-width: 520px; } .op-grid, .matrix { grid-template-columns: 1fr; } .op-cell { border-right: none !important; } .op-cell:nth-last-child(-n+2) { border-bottom: 0.5px solid var(--border); } .op-cell:last-child { border-bottom: none; } .hdr h1 { font-size: 34px; } .logo-word { font-size: 21px; } .hdr { padding: 1.25rem 1rem 1rem; }
 }
+
+.alert { border-radius: 24px; padding: 18px 20px; margin-bottom: 12px; border: 1px solid rgba(36,39,42,0.06); box-shadow: none; }
+.a-red { background: rgba(170,0,97,0.08); border-color: rgba(170,0,97,0.12); }
+.a-amber { background: rgba(255,106,20,0.10); border-color: rgba(255,106,20,0.14); }
+.a-blue { background: rgba(71,92,199,0.10); border-color: rgba(71,92,199,0.14); }
+.a-green { background: rgba(47,136,72,0.10); border-color: rgba(47,136,72,0.14); }
+.alert-tag { font-family: var(--body); font-size: 14px; text-transform: none; letter-spacing: 0; font-weight: 600; margin-bottom: 8px; }
+.a-red .alert-tag { color: var(--maroon); }
+.a-amber .alert-tag { color: var(--ranch); }
+.a-blue .alert-tag { color: var(--sea); }
+.a-green .alert-tag { color: var(--earth); }
+.alert p { font-size: 16px; line-height: 1.65; margin: 0; max-width: none; }
+.a-red p { color: #5C1B3A; }
+.a-amber p { color: #5A2E0A; }
+.a-blue p { color: #23356F; }
+.a-green p { color: #1F5D35; }
+
+.sg {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(140px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.stat {
+  background: #FFFFFF;
+  border: 1px solid rgba(36,39,42,0.06);
+  border-radius: 24px;
+  padding: 22px;
+}
+.sl {
+  font-family: var(--body);
+  font-size: 13px;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #5F6368;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.sv {
+  font-family: var(--body);
+  font-size: 34px;
+  font-weight: 700;
+  color: #202124;
+  margin-bottom: 6px;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+.sb {
+  font-size: 14px;
+  color: #5F6368;
+  line-height: 1.55;
+}
+.s-r { background: rgba(170,0,97,0.08); }
+.s-r .sv { color: var(--maroon); }
+.s-g { background: rgba(47,136,72,0.10); }
+.s-g .sv { color: var(--earth); }
+.s-a { background: rgba(255,106,20,0.10); }
+.s-a .sv { color: var(--ranch); }
+.s-b { background: rgba(71,92,199,0.10); }
+.s-b .sv { color: var(--sea); }
+.s-t { background: rgba(184,205,194,0.42); }
+.s-t .sv { color: var(--earth); }
+.s-p { background: rgba(219,25,132,0.10); }
+.s-p .sv { color: var(--range); }
+
+.objectives {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  margin: 8px 0 32px;
+  align-items: stretch;
+}
+.objectives .stat {
+  flex: 1 1 0;
+  width: auto;
+  min-width: 0;
+  min-height: 228px;
+  padding: 28px;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.objectives .stat:first-child {
+  border: 2px solid var(--yellow);
+  background: rgba(255,184,28,0.08);
+}
+.objectives .stat:last-child {
+  background: rgba(184,205,194,0.28);
+}
+.objectives .sv {
+  font-size: 46px;
+}
+.objectives .sb {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.card {
+  background: #FFFFFF;
+  border: 1px solid rgba(36,39,42,0.06);
+  border-radius: 24px;
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: none;
+}
+.ca { border-left: 4px solid var(--yellow); }
+.ct { border-left: 4px solid var(--earth); }
+.cb { border-left: 4px solid var(--sea); }
+.cg { border-left: 4px solid var(--breakfast); }
+.cr { border-left: 4px solid var(--maroon); background: rgba(170,0,97,0.08); }
+.cp { border-left: 4px solid var(--range); }
+
+.ins {
+  border: 1px solid rgba(36,39,42,0.06);
+  border-left: 4px solid var(--sea);
+  border-radius: 24px;
+  padding: 20px 22px;
+  margin-bottom: 20px;
+  background: #FFFFFF;
+}
+.ins-l {
+  font-family: var(--body);
+  font-size: 20px;
+  text-transform: none;
+  letter-spacing: -0.01em;
+  color: #202124;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.ins.ig { border-left-color: var(--earth); background: rgba(47,136,72,0.08); }
+.ins.ib { border-left-color: var(--sea); background: rgba(71,92,199,0.08); }
+.ins.iw { border-left-color: var(--maroon); background: rgba(170,0,97,0.08); }
+
+.tw {
+  background: #FFFFFF;
+  border: 1px solid rgba(36,39,42,0.06);
+  border-radius: 24px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  overflow-x: auto;
+  box-shadow: none;
+}
+thead th {
+  font-family: var(--body);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0;
+  color: #5F6368;
+  text-align: left;
+  padding: 16px 18px;
+  border-bottom: 1px solid rgba(36,39,42,0.06);
+  background: #F8F9FA;
+}
+tbody td {
+  padding: 18px;
+  border-bottom: 1px solid rgba(36,39,42,0.05);
+  color: #5F6368;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 1.72;
+}
+td.nm {
+  font-family: var(--body);
+  font-weight: 600;
+  font-size: 16px;
+  color: #202124;
+  line-height: 1.45;
+}
+td.r {
+  font-family: var(--body);
+  font-size: 15px;
+  font-weight: 600;
+}
+tbody tr:hover {
+  background: rgba(36,39,42,0.02);
+}
+
+.phase {
+  background: #FFFFFF;
+  border: 1px solid rgba(36,39,42,0.06);
+  border-radius: 24px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.ph-title h4,
+.action h4,
+.srb-title,
+.op-hdr h2 {
+  font-family: var(--body);
+}
+.ph-title h4 { font-size: 22px; font-weight: 600; color: #202124; margin-bottom: 8px; letter-spacing: -0.01em; }
+.ph-title p,
+.action p { max-width: none; }
+.atag {
+  display: inline-block;
+  font-family: var(--body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+  padding: 5px 9px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+.t-crit { background: rgba(170,0,97,0.08); color: var(--maroon); }
+.t-now { background: rgba(255,184,28,0.14); color: #7A5410; }
+.t-bld { background: rgba(71,92,199,0.10); color: var(--sea); }
+.t-tst { background: rgba(255,106,20,0.10); color: var(--ranch); }
+
+.srb-r { background: rgba(170,0,97,0.08); border-color: rgba(170,0,97,0.12); }
+.srb-g { background: rgba(47,136,72,0.10); border-color: rgba(47,136,72,0.14); }
+.srb-n { background: #FFFFFF; border-color: rgba(36,39,42,0.06); }
+.srb-r .srb-title { color: var(--maroon); }
+.srb-g .srb-title { color: var(--earth); }
+
+.op {
+  background: #FFFFFF;
+  border: 1px solid rgba(36,39,42,0.06);
+  border-radius: 28px;
+  overflow: hidden;
+}
+.op-hdr { background: var(--charcoal); padding: 24px; }
+.op-hdr h2 { font-size: 30px; font-weight: 700; color: var(--white); margin-bottom: 6px; letter-spacing: -0.02em; }
+.op-hdr p { font-size: 14px; color: rgba(255,255,255,0.82); font-family: var(--body); letter-spacing: 0; margin: 0; max-width: none; }
+.op-warn { padding: 18px 22px; background: rgba(255,184,28,0.14); border-bottom: 1px solid rgba(255,184,28,0.20); }
+.op-warn-lbl { font-family: var(--body); font-size: 13px; text-transform: none; letter-spacing: 0; color: #7A5410; margin-bottom: 6px; font-weight: 600; }
+.op-warn p { font-size: 16px; color: #5A4515; margin: 0; line-height: 1.65; max-width: none; }
+.op-gap-bar {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 18px 22px;
+  border-bottom: 1px solid rgba(36,39,42,0.06);
+  background: rgba(184,205,194,0.28);
+  align-items: flex-end;
+}
+.op-gap-lbl { font-family: var(--body); font-size: 13px; text-transform: none; letter-spacing: 0; color: #355548; width: 100%; font-weight: 600; }
+.og .v { font-family: var(--body); font-size: 20px; font-weight: 700; color: #202124; }
+.og .l { font-size: 12px; color: #5F6368; font-family: var(--body); }
+.op-arr { font-size: 14px; color: #5F6368; padding-bottom: 4px; }
+.op-cl { font-family: var(--body); font-size: 14px; text-transform: none; letter-spacing: 0; color: #5F6368; margin-bottom: 8px; font-weight: 600; }
+.oi { font-size: 15px; color: #5F6368; padding-left: 14px; position: relative; margin-bottom: 6px; line-height: 1.65; }
+
+.nb:hover { background: rgba(36,39,42,0.03); color: #202124; }
+
 </style>
 </head>
 <body>
 <div class="wrap"> <header class="hdr"> <div class="hdr-row"> <div> <div class="logo-lockup" aria-label="CookUnity logo"> <img class="logo-mark" src="https://cu-website-cms-prd.s3.us-east-1.amazonaws.com/CU_Logo_Horizontal_08_8814e397a9.svg" alt="CookUnity" /> </div> <div class="wordmark">Organic growth plan</div> <h1>Integrated Organic Growth Plan</h1> <p>Growth Action Plan · Sam and Juan · April 2026 to April 2027 · Built from content performance data and the operating plan</p> <div class="hdr-meta"> <span class="meta-pill">April 2026 to April 2027</span> <span class="meta-pill">pLTV $343/trial</span> <span class="meta-pill">pLTR $865/trial</span> <span class="meta-pill">Conservative target 11,241/mo</span> <span class="meta-pill">Organic target 13,402</span> <span class="meta-pill">Initiative impact 11,585/yr</span> </div> </div> </div>
 </header>
 
-<div class="sg" style="margin-top: 8px; margin-bottom: 28px;">
+<div class="objectives">
   <div class="stat">
     <div class="sl">Aggressive objective</div>
     <div class="sv">~135K</div>
@@ -308,8 +584,8 @@ tr.ph-scale { background: rgba(83,74,183,0.04); } /* Sep risk blocks */
 <div class="alert a-amber" style="margin-bottom:0.75rem"> <div class="alert-tag">Primary dependency</div> <p><strong>/our-menu remains the highest-probability non-SEO lever.</strong> It is already in motion, uses existing traffic, and does not require new pages or new infrastructure. The plan assumes above-the-fold optimization pushes the page slightly beyond 0.45% CVR.</p>
 </div>
 <div class="alert a-blue" style="margin-bottom:1.5rem"> <div class="alert-tag">Data grounding</div> <p>Blog capture remains a feeder system, not the September closer. We prioritize topic-matched, mobile-first CTAs on top “meal plan” pages first, while using bridge pages to route more existing organic traffic into higher-intent flows.</p>
-</div> <nav class="nav"> <button class="nb active" onclick="show('exec')">Summary</button> <button class="nb" onclick="show('perf')">Content performance</button> <button class="nb" onclick="show('capture')">Email capture</button> <button class="nb" onclick="show('initiatives')">All 8 initiatives</button> <button class="nb risk" onclick="show('sep')">September</button> <button class="nb" onclick="show('monthly')">Targets</button> <button class="nb" onclick="show('phases')">Plan</button> <button class="nb" onclick="show('gap')">Additional upside</button> <button class="nb" onclick="show('gates')">Decision points</button> <button class="nb" onclick="show('actions')">Next steps</button> <button class="nb" onclick="show('onepager')">One-page brief</button>
-</nav> <!-- ══════════ EXEC SUMMARY ══════════ --> <div class="sec on" id="exec"> <div class="ey">Plan overview</div> <h2 class="st">Summary</h2> <p class="ss">This is the organic growth plan for April 2026 to April 2027. It combines 8 initiatives across SEO and non-SEO, uses the Growth Action Plan as the operating source of truth, and is built around the September checkpoint logic in the plan: the combined initiative set gets us to target, with the <strong>/our-menu redesign stretch test</strong> providing the final conversion lift needed to get there.</p> <div class="sg"> <div class="stat s-r"><div class="sl">Current blog emails</div><div class="sv">~400/mo</div><div class="sb">0.47% capture rate today</div></div> <div class="stat s-t"><div class="sl">Blog Sep checkpoint</div><div class="sv">1,000/mo</div><div class="sb">1.4% capture rate · ~12K leads/yr</div></div> <div class="stat s-b"><div class="sl">Total initiative impact</div><div class="sv">11,585/yr</div><div class="sb">trials driven across the year by the initiatives</div></div> <div class="stat s-g"><div class="sl">Conservative Sep target</div><div class="sv">11,241</div><div class="sb">monthly trials by September</div></div> <div class="stat s-a"><div class="sl">Aggressive Sep target</div><div class="sv">13,402</div><div class="sb">monthly trials by September</div></div> <div class="stat s-p"><div class="sl">Key non-SEO stretch</div><div class="sv">0.47–0.50%</div><div class="sb">/our-menu CVR target in the stretched case</div></div> </div> <div class="ins"> <div class="ins-l">The shape of the plan</div> <p>SEO supplies the biggest annual lift. Non-SEO supplies the clearest short-term September lever. The September projection math is explicit: <strong>10,830 on trend without initiatives</strong>, plus <strong>~965 monthly trials from initiative lift</strong> (<strong>11,585 ÷ 12</strong>), puts the plan at <strong>~11,795 in September</strong>.</p> </div> <div class="card ca"> <h3>What gets us to September</h3> <p>The September projection is built from the existing 8-initiative set: <strong>10,830 trend baseline + (11,585 ÷ 12) monthly initiative lift = ~11,795 projected trials</strong>. Within that combined lift, <strong>/our-menu</strong> remains the easiest, highest-probability non-SEO lever because the page already has traffic and the test is already running.</p> </div> <div class="card ct"> <h3>What still remains true about the blog</h3> <p>Blog remains a capture channel first. The expected outcome is <strong>~1,000 leads/month by September</strong>, feeding a nurture engine worth <strong>~120–240 trials/year</strong>. That matters to the plan, but it is not the lever that closes a final September gap. /our-menu does that.</p> </div>
+</div> <nav class="nav"> <button class="nb active" onclick="show('exec')">Plan summary</button> <button class="nb" onclick="show('perf')">Content performance</button> <button class="nb" onclick="show('capture')">Email capture</button> <button class="nb" onclick="show('initiatives')">All 8 initiatives</button> <button class="nb risk" onclick="show('sep')">September</button> <button class="nb" onclick="show('monthly')">Targets</button> <button class="nb" onclick="show('phases')">Plan</button> <button class="nb" onclick="show('gap')">Additional upside</button> <button class="nb" onclick="show('gates')">Decision points</button> <button class="nb" onclick="show('actions')">Next steps</button> <button class="nb" onclick="show('onepager')">One-page brief</button>
+</nav> <!-- ══════════ EXEC SUMMARY ══════════ --> <div class="sec on" id="exec"> <div class="ey">Plan overview</div> <h2 class="st">Plan summary</h2> <p class="ss">This is the organic growth plan for April 2026 to April 2027. It combines 8 initiatives across SEO and non-SEO, uses the Growth Action Plan as the operating source of truth, and is built around the September checkpoint logic in the plan: the combined initiative set gets us to target, with the <strong>/our-menu redesign stretch test</strong> providing the final conversion lift needed to get there.</p> <div class="sg"> <div class="stat s-r"><div class="sl">Current blog emails</div><div class="sv">~400/mo</div><div class="sb">0.47% capture rate today</div></div> <div class="stat s-t"><div class="sl">Blog Sep checkpoint</div><div class="sv">1,000/mo</div><div class="sb">1.4% capture rate · ~12K leads/yr</div></div> <div class="stat s-b"><div class="sl">Total initiative impact</div><div class="sv">11,585/yr</div><div class="sb">trials driven across the year by the initiatives</div></div> <div class="stat s-g"><div class="sl">Conservative Sep target</div><div class="sv">11,241</div><div class="sb">monthly trials by September</div></div> <div class="stat s-a"><div class="sl">Aggressive Sep target</div><div class="sv">13,402</div><div class="sb">monthly trials by September</div></div> <div class="stat s-p"><div class="sl">Key non-SEO stretch</div><div class="sv">0.47–0.50%</div><div class="sb">/our-menu CVR target in the stretched case</div></div> </div> <div class="ins"> <div class="ins-l">The shape of the plan</div> <p>SEO supplies the biggest annual lift. Non-SEO supplies the clearest short-term September lever. The September projection math is explicit: <strong>10,830 on trend without initiatives</strong>, plus <strong>~965 monthly trials from initiative lift</strong> (<strong>11,585 ÷ 12</strong>), puts the plan at <strong>~11,795 in September</strong>.</p> </div> <div class="card ca"> <h3>What gets us to September</h3> <p>The September projection is built from the existing 8-initiative set: <strong>10,830 trend baseline + (11,585 ÷ 12) monthly initiative lift = ~11,795 projected trials</strong>. Within that combined lift, <strong>/our-menu</strong> remains the easiest, highest-probability non-SEO lever because the page already has traffic and the test is already running.</p> </div> <div class="card ct"> <h3>What still remains true about the blog</h3> <p>Blog remains a capture channel first. The expected outcome is <strong>~1,000 leads/month by September</strong>, feeding a nurture engine worth <strong>~120–240 trials/year</strong>. That matters to the plan, but it is not the lever that closes a final September gap. /our-menu does that.</p> </div>
 </div> <!-- ══════════ CONTENT PERFORMANCE ══════════ -->
 <div class="sec" id="perf"> <div class="ey">Section 1</div> <h2 class="st">Content performance data</h2> <p class="ss">Feb 14 – Apr 14, 2026 · US/Canada · Organic channel only. This data grounds our CTA prioritization, bridge page sequencing, and email capture targets throughout the plan.</p> <h3>1a — Blog vs landing pages</h3> <div class="tw"> <table> <thead><tr><th>Channel</th><th class="r">Pages</th><th class="r">Sessions</th><th class="r">Signups</th><th class="r">Signup Rate</th><th class="r">Checkouts</th><th class="r">Checkout CVR</th></tr></thead> <tbody> <tr><td class="nm">Blog</td><td class="r">408</td><td class="r">171,496</td><td class="r">1,111</td><td class="r"><span class="rate rl3">0.648%</span></td><td class="r">23</td><td class="r">0.013%</td></tr> <tr><td class="nm">Landing Pages</td><td class="r">9,013</td><td class="r">892,598</td><td class="r">141,101</td><td class="r"><span class="rate rh">15.808%</span></td><td class="r">14,628</td><td class="r"><span class="rate rh">1.639%</span></td></tr> </tbody> </table> </div> <div class="ins ib" style="margin-bottom:1.5rem"> <div class="ins-l">Strategic confirmation</div> <p>Our blog signup rate is 24× lower than our landing pages; checkout CVR is 126× lower. Our blog's job is capture (email), not convert (trial). Every blog CTA should drive email capture first, not direct signup.</p> </div> <h3>1b — Performance by topic cluster</h3> <div class="tw"> <table> <thead><tr><th>Cluster</th><th class="r">Pages</th><th class="r">Sessions</th><th class="r">Traffic %</th><th class="r">Signups</th><th class="r">Signup Rate</th><th class="r">Checkouts</th><th>Signal</th></tr></thead> <tbody> <tr><td class="nm">Carnivore / Keto</td><td class="r">29</td><td class="r">48,849</td><td class="r">28.5%</td><td class="r">378</td><td class="r"><span class="rate rm">0.77%</span></td><td class="r">2</td><td style="font-size:12px;color:var(--amber)">High traffic / low CVR</td></tr> <tr><td class="nm">Cuisine / Cultural</td><td class="r">49</td><td class="r">30,528</td><td class="r">17.8%</td><td class="r">69</td><td class="r"><span class="rate rl3">0.23%</span></td><td class="r">0</td><td style="font-size:12px;color:var(--red)">SEO traffic, no intent</td></tr> <tr><td class="nm">Other</td><td class="r">183</td><td class="r">25,002</td><td class="r">14.6%</td><td class="r">209</td><td class="r"><span class="rate rm">0.84%</span></td><td class="r">10</td><td style="font-size:12px;color:var(--muted)">Mixed</td></tr> <tr><td class="nm">High-Protein</td><td class="r">22</td><td class="r">23,433</td><td class="r">13.7%</td><td class="r">101</td><td class="r"><span class="rate rl3">0.43%</span></td><td class="r">2</td><td style="font-size:12px;color:var(--amber)">HVC Seg 1 audience · fix CTA</td></tr> <tr><td class="nm">Meal Occasions</td><td class="r">26</td><td class="r">10,371</td><td class="r">6.0%</td><td class="r">35</td><td class="r"><span class="rate rl3">0.34%</span></td><td class="r">0</td><td style="font-size:12px;color:var(--red)">Low intent · seasonal</td></tr> <tr><td class="nm">Med / Paleo</td><td class="r">22</td><td class="r">8,605</td><td class="r">5.0%</td><td class="r">74</td><td class="r"><span class="rate rm">0.86%</span></td><td class="r">2</td><td style="font-size:12px;color:var(--teal)">Above avg ✓</td></tr> <tr><td class="nm">Health / Wellness</td><td class="r">10</td><td class="r">6,757</td><td class="r">3.9%</td><td class="r">68</td><td class="r"><span class="rate rh">1.01%</span></td><td class="r">3</td><td style="font-size:12px;color:var(--green)">Above avg ✓✓</td></tr> <tr style="background:rgba(29,158,117,0.05)"><td class="nm" style="color:var(--teal);font-weight:500">Meal Planning / Delivery</td><td class="r">18</td><td class="r">6,391</td><td class="r">3.7%</td><td class="r">90</td><td class="r"><span class="rate rh">1.41%</span></td><td class="r">3</td><td style="font-size:12px;color:var(--teal)"> HIGHEST CVR · fewest pages</td></tr> <tr><td class="nm">Low-Sodium</td><td class="r">8</td><td class="r">6,340</td><td class="r">3.7%</td><td class="r">62</td><td class="r"><span class="rate rh">0.98%</span></td><td class="r">1</td><td style="font-size:12px;color:var(--green)">Above avg · underinvested ✓</td></tr> <tr><td class="nm">Vegan / Plant-Based</td><td class="r">21</td><td class="r">2,721</td><td class="r">1.6%</td><td class="r">6</td><td class="r"><span class="rate rl3">0.22%</span></td><td class="r">0</td><td style="font-size:12px;color:var(--red)">Low traffic + low rate</td></tr> <tr><td class="nm">Diet / Weight Loss</td><td class="r">19</td><td class="r">2,499</td><td class="r">1.5%</td><td class="r">19</td><td class="r"><span class="rate rm">0.76%</span></td><td class="r">0</td><td style="font-size:12px;color:var(--muted)">Below avg · expandable</td></tr> </tbody> </table> </div> <h3>1c — Performance by intent stage</h3> <div class="tw"> <table> <thead><tr><th>Intent Stage</th><th class="r">Pages</th><th class="r">Sessions</th><th class="r">Signups</th><th class="r">Signup Rate</th><th class="r">Checkouts</th><th class="r">Checkout CVR</th><th>Implication</th></tr></thead> <tbody> <tr><td class="nm">Low Intent</td><td class="r">276</td><td class="r">100,021</td><td class="r">401</td><td class="r"><span class="rate rl3">0.40%</span></td><td class="r">9</td><td class="r">0.009%</td><td style="font-size:12px;color:var(--amber)">Bridge page opportunity</td></tr> <tr><td class="nm">Mid Intent</td><td class="r">99</td><td class="r">65,509</td><td class="r">588</td><td class="r"><span class="rate rm">0.90%</span></td><td class="r">9</td><td class="r">0.014%</td><td style="font-size:12px;color:var(--muted)">Solid volume, moderate CVR</td></tr> <tr style="background:rgba(59,109,17,0.04)"><td class="nm">High Intent</td><td class="r">32</td><td class="r">5,966</td><td class="r">122</td><td class="r"><span class="rate rh">2.05%</span></td><td class="r">5</td><td class="r"><span class="rate rh">0.084%</span></td><td style="font-size:12px;color:var(--green)">5× CVR · only 3.5% of traffic</td></tr> </tbody> </table> </div> <div class="ins" style="margin-bottom:1.5rem"> <div class="ins-l">Bridge page opportunity</div> <p>100K of our sessions per month sit in low-intent content (0.40% CVR). Our high-intent pages convert at 2.05% — 5× better — but represent only 3.5% of our traffic and just 32 pages. Building bridge pages that move low-intent sessions toward high-intent actions is the highest-leverage blog improvement available to us.</p> </div> <h3>1d — Top 10 blog pages by signup rate (min. 500 sessions)</h3> <div class="tw"> <table> <thead><tr><th>Page</th><th>Cluster</th><th class="r">Sessions</th><th class="r">Signups</th><th class="r">Rate</th><th>CTA Priority</th></tr></thead> <tbody> <tr style="background:rgba(29,158,117,0.05)"><td class="nm">carnivore diet meal plan</td><td class="cl">Carnivore/Keto</td><td class="r">2,872</td><td class="r">75</td><td class="r"><span class="rate rh">2.61%</span></td><td style="font-size:12px;color:var(--teal)"> Priority CTA #1</td></tr> <tr><td class="nm">low sodium diet meal plan</td><td class="cl">Low-Sodium</td><td class="r">1,623</td><td class="r">41</td><td class="r"><span class="rate rh">2.53%</span></td><td style="font-size:12px;color:var(--teal)"> Priority CTA #2</td></tr> <tr><td class="nm">high protein meal plan</td><td class="cl">High-Protein</td><td class="r">646</td><td class="r">14</td><td class="r"><span class="rate rh">2.17%</span></td><td style="font-size:12px;color:var(--teal)"> Priority CTA #3</td></tr> <tr style="background:rgba(216,90,48,0.04)"><td class="nm" style="color:var(--accent)">carnivore diet for beginners </td><td class="cl">Carnivore/Keto</td><td class="r">5,661</td><td class="r">102</td><td class="r"><span class="rate rh">1.80%</span></td><td style="font-size:12px;color:var(--accent)">Best combo: high traffic + high CVR</td></tr> <tr><td class="nm">paleo meal plan</td><td class="cl">Med/Paleo</td><td class="r">1,705</td><td class="r">26</td><td class="r"><span class="rate rh">1.53%</span></td><td style="font-size:12px;color:var(--muted)">Expand Paleo series</td></tr> <tr><td class="nm">low carb meal plan</td><td class="cl">Meal Planning</td><td class="r">2,070</td><td class="r">29</td><td class="r"><span class="rate rh">1.40%</span></td><td style="font-size:12px;color:var(--muted)">Upgrade CTA offer</td></tr> <tr><td class="nm">keto meal plan</td><td class="cl">Carnivore/Keto</td><td class="r">821</td><td class="r">11</td><td class="r"><span class="rate rh">1.34%</span></td><td style="font-size:12px;color:var(--muted)">Grow traffic from carnivore cluster</td></tr> <tr><td class="nm">carb cycling meal plan</td><td class="cl">Meal Planning</td><td class="r">1,230</td><td class="r">16</td><td class="r"><span class="rate rh">1.30%</span></td><td style="font-size:12px;color:var(--muted)">Internal link from carb/keto</td></tr> <tr><td class="nm">mediterranean food list</td><td class="cl">Med/Paleo</td><td class="r">932</td><td class="r">12</td><td class="r"><span class="rate rh">1.29%</span></td><td style="font-size:12px;color:var(--muted)">Add meal plan CTA</td></tr> <tr><td class="nm">high protein diet for weight loss</td><td class="cl">High-Protein</td><td class="r">837</td><td class="r">10</td><td class="r"><span class="rate rh">1.20%</span></td><td style="font-size:12px;color:var(--muted)">Bridge to meal plan pages</td></tr> </tbody> </table> </div> <div class="ins ig" style="margin-bottom:1.5rem"> <div class="ins-l">Our CTA rollout order</div> <p>6 of our top 10 converting pages contain "meal plan" in the title. We start our CTA infrastructure rollout here. "Carnivore diet for beginners" is the standout: 5.7K sessions AND 1.8% signup rate — the highest combined-value page in our blog.</p> </div> <h3>1e — Top 10 blog pages by traffic</h3> <div class="tw"> <table> <thead><tr><th>Page</th><th>Cluster</th><th class="r">Sessions</th><th class="r">Signup Rate</th><th>Action / Signal</th></tr></thead> <tbody> <tr><td class="nm">carnivore diet recipes</td><td class="cl">Carnivore/Keto</td><td class="r">19,136</td><td class="r"><span class="rate rm">0.47%</span></td><td style="font-size:12px;color:var(--amber)">Highest traffic — CTA upgrade critical</td></tr> <tr><td class="nm">passover foods</td><td class="cl">Cuisine/Cultural</td><td class="r">8,536</td><td class="r"><span class="rate rl3">0.42%</span></td><td style="font-size:12px;color:var(--faint)">Seasonal — topic-matched CTA only</td></tr> <tr><td class="nm">high protein low calorie snacks</td><td class="cl">High-Protein</td><td class="r">7,406</td><td class="r"><span class="rate rl3">0.16%</span></td><td style="font-size:12px;color:var(--amber)">Low CVR — needs CTA redesign</td></tr> <tr><td class="nm">high protein low carb diet recipes</td><td class="cl">High-Protein</td><td class="r">6,157</td><td class="r"><span class="rate rm">0.42%</span></td><td style="font-size:12px;color:var(--amber)">Bridge page candidate</td></tr> <tr style="background:rgba(29,158,117,0.05)"><td class="nm" style="color:var(--teal)">carnivore diet for beginners </td><td class="cl">Carnivore/Keto</td><td class="r">5,661</td><td class="r"><span class="rate rh">1.80%</span></td><td style="font-size:12px;color:var(--teal)"> BEST COMBO: high traffic + high CVR</td></tr> <tr><td class="nm">easter dinner ideas</td><td class="cl">Meal Occasions</td><td class="r">4,980</td><td class="r"><span class="rate rm">0.44%</span></td><td style="font-size:12px;color:var(--faint)">Seasonal</td></tr> <tr><td class="nm">hawaiian foods</td><td class="cl">Cuisine/Cultural</td><td class="r">4,311</td><td class="r"><span class="rate rl3">0.16%</span></td><td style="font-size:12px;color:var(--faint)">SEO traffic, low intent</td></tr> <tr><td class="nm">best low sugar fruits</td><td class="cl">Health/Wellness</td><td class="r">3,918</td><td class="r"><span class="rate rz">0.05%</span></td><td style="font-size:12px;color:var(--red)">Bottom performer despite traffic</td></tr> <tr><td class="nm">carnivore diet snacks</td><td class="cl">Carnivore/Keto</td><td class="r">3,758</td><td class="r"><span class="rate rl3">0.37%</span></td><td style="font-size:12px;color:var(--amber)">Bridge page candidate</td></tr> <tr><td class="nm">traditional irish food</td><td class="cl">Cuisine/Cultural</td><td class="r">3,427</td><td class="r"><span class="rate rl3">0.12%</span></td><td style="font-size:12px;color:var(--faint)">SEO traffic, low intent</td></tr> </tbody> </table> </div> <h3>1f — Top organic landing pages</h3> <div class="tw"> <table> <thead><tr><th>Page</th><th class="r">Sessions</th><th class="r">Signups</th><th class="r">Checkouts</th><th class="r">Signup Rate</th><th class="r">Checkout CVR</th><th>Notes</th></tr></thead> <tbody> <tr><td class="nm">/home</td><td class="r">583,994</td><td class="r">115,528</td><td class="r">12,637</td><td class="r"><span class="rate rh">19.78%</span></td><td class="r">2.16%</td><td style="font-size:12px;color:var(--muted)"></td></tr> <tr style="background:rgba(216,90,48,0.04)"><td class="nm">/our-menu </td><td class="r">60,317</td><td class="r">7,469</td><td class="r">627</td><td class="r"><span class="rate rh">12.38%</span></td><td class="r"><span class="rate rm">1.04%</span></td><td style="font-size:12px;color:var(--accent)">A/B test target: 0.32% → 0.45%+ checkout CVR</td></tr> <tr><td class="nm">/meal-prep</td><td class="r">19,831</td><td class="r">5,092</td><td class="r">211</td><td class="r"><span class="rate rh">25.68%</span></td><td class="r">1.06%</td><td style="font-size:12px;color:var(--muted)">Highest signup rate of all LPs</td></tr> <tr><td class="nm">/how-it-works</td><td class="r">14,958</td><td class="r">1,638</td><td class="r">162</td><td class="r"><span class="rate rh">10.95%</span></td><td class="r">1.08%</td><td style="font-size:12px;color:var(--muted)"></td></tr> <tr><td class="nm">/delivery-map</td><td class="r">4,685</td><td class="r">702</td><td class="r">59</td><td class="r"><span class="rate rh">14.98%</span></td><td class="r">1.26%</td><td style="font-size:12px;color:var(--muted)"></td></tr> <tr><td class="nm">/cookunity-cost</td><td class="r">3,002</td><td class="r">698</td><td class="r">47</td><td class="r"><span class="rate rh">23.25%</span></td><td class="r">1.57%</td><td style="font-size:12px;color:var(--green)">High CVR — strong purchase intent</td></tr> <tr><td class="nm">/govxverification</td><td class="r">2,279</td><td class="r">913</td><td class="r">119</td><td class="r"><span class="rate rh">40.06%</span></td><td class="r"><span class="rate rh">5.22%</span></td><td style="font-size:12px;color:var(--green)">Highest checkout CVR of all organic pages</td></tr> </tbody> </table> </div> <div class="ins ib"> <div class="ins-l">/our-menu note</div> <p>Our /our-menu page shows 1.04% checkout CVR in this dataset vs. the 0.32% initiative baseline — this reflects different conversion definitions and funnel filters. The 0.32% → 0.45% A/B test target remains valid; it is scoped to a specific session-to-checkout metric across all traffic.</p> </div>
 </div> <!-- ══════════ EMAIL CAPTURE ══════════ -->
@@ -322,7 +598,7 @@ tr.ph-scale { background: rgba(83,74,183,0.04); } /* Sep risk blocks */
 </div>
 <!-- ══════════ DECISION GATES ══════════ --> <div class="sec" id="gates"> <div class="ey">Section 7</div> <h2 class="st">Decision points</h2> <p class="ss">The plan has a clear sequence: build capture, launch nurture, push /our-menu into the redesign stretch range, and then expand from the base plan with the next-highest-confidence levers.</p> <div class="tw"> <table> <thead><tr><th>Date</th><th>Gate</th><th>Signal</th><th>Go</th><th>No-Go</th></tr></thead> <tbody> <tr><td class="nm">April 18</td><td style="font-size:13px;color:var(--ink);font-weight:500">Content capacity check</td><td style="font-size:12px;color:var(--muted)">Output required vs. actual capacity across all 8 initiatives</td><td style="font-size:12px;color:var(--teal)">Proceed as planned</td><td style="font-size:12px;color:var(--red)">Reprioritize immediately</td></tr> <tr><td class="nm">May 15</td><td style="font-size:13px;color:var(--ink);font-weight:500">/our-menu A/B read</td><td style="font-size:12px;color:var(--muted)">Directionally validates 0.45%+</td><td style="font-size:12px;color:var(--teal)">Roll out and optimize toward 0.47%</td><td style="font-size:12px;color:var(--red)">Refine above-the-fold and retest</td></tr> <tr><td class="nm">June 30</td><td style="font-size:13px;color:var(--ink);font-weight:500">Nurture viability</td><td style="font-size:12px;color:var(--muted)">Lead-to-trial CVR on first cohort</td><td style="font-size:12px;color:var(--teal)">Double down on capture</td><td style="font-size:12px;color:var(--red)">Shift more weight to direct CTAs</td></tr> <tr><td class="nm">June 30</td><td style="font-size:13px;color:var(--ink);font-weight:500">Post-checkpoint expansion decision</td><td style="font-size:12px;color:var(--muted)">Named additional levers with owner + sizing</td><td style="font-size:12px;color:var(--teal)">Fund next upside levers</td><td style="font-size:12px;color:var(--red)">Stay with base plan</td></tr> <tr><td class="nm">September 30</td><td style="font-size:13px;color:var(--ink);font-weight:500">September checkpoint</td><td style="font-size:12px;color:var(--muted)">11,241 hit</td><td style="font-size:12px;color:var(--teal)">Scale the winning levers</td><td style="font-size:12px;color:var(--red)">Recalibrate the plan formally</td></tr> </tbody> </table> </div>
 </div> <!-- ══════════ IMMEDIATE ACTIONS ══════════ --> <div class="sec" id="actions"> <div class="ey">Section 8</div> <h2 class="st">Next steps</h2> <p class="ss">These are the next moves required to execute the plan as written.</p> <div class="action"> <div class="an" style="background:var(--red)">1</div> <div> <span class="atag t-crit">Today · Sam + Eng</span> <h4>Instrument /our-menu completely</h4> <p>We need clean event tracking before the A/B read so the 0.45% → 0.47% stretch case can be evaluated confidently.</p> </div> </div> <div class="action"> <div class="an" style="background:var(--red)">2</div> <div> <span class="atag t-crit">Today · Sam</span> <h4>Ship mobile-first CTAs on the top “meal plan” pages</h4> <p>These pages already convert best. Capture infrastructure goes here first because it is the fastest path to the 1,000 leads/month September checkpoint.</p> </div> </div> <div class="action"> <div class="an" style="background:var(--amber)">3</div> <div> <span class="atag t-now">This week · Sam</span> <h4>Prioritize above-the-fold /our-menu changes</h4> <p>Value prop clarity, pricing visibility, and CTA simplification are the exact edits most likely to push the page slightly beyond 0.45% CVR.</p> </div> </div> <div class="action"> <div class="an" style="background:var(--amber)">4</div> <div> <span class="atag t-now">This week · Juan</span> <h4>Lock SEO initiative baselines into the dashboard</h4> <p>Use the operating values in the plan everywhere: 1,000–1,200, 600–700, 4,531, and 300–350.</p> </div> </div> <div class="action"> <div class="an" style="background:var(--blue)">5</div> <div> <span class="atag t-bld">Before June 30 · Sam + Juan</span> <h4>Name the next aggressive levers</h4> <p>After the /our-menu redesign lands, the next best expansion levers are more bridge pages, more meal-plan/high-intent pages, and deeper purchase-signal rollout.</p> </div> </div>
-</div> <!-- ══════════ ONE-PAGER ══════════ --> <div class="sec" id="onepager"> <div class="ey">Summary</div> <h2 class="st">One-page brief</h2> <p class="ss">The full plan on one page. For sharing with the organic team or leadership.</p> <div class="op"> <div class="op-hdr"> <h2>CookUnity — Integrated Organic Growth Plan</h2> <p>April 2026 to April 2027 · Sam (non-SEO) + Juan (SEO) · pLTV $343/trial · pLTR $865/trial · Chefs to the People</p> </div> <div class="op-warn"> <div class="op-warn-lbl">September checkpoint</div> <p>This plan is built to reach <strong>11,241 organic trials/month by September</strong>. The strongest non-SEO scaling lever is <strong>/our-menu at 0.47–0.50% CVR</strong>, which lifts the page to roughly <strong>~371–420 trials/month by September</strong>.</p> </div> <div class="op-gap-bar"> <div class="op-gap-lbl">Core plan numbers</div> <div class="og"><div class="v">11,585</div><div class="l">annual initiative impact</div></div> <div class="op-arr"> · </div> <div class="og"><div class="v">11,241</div><div class="l">conservative Sep target</div></div> <div class="op-arr"> · </div> <div class="og"><div class="v">13,402</div><div class="l">aggressive Sep target</div></div> </div> <div class="op-grid"> <div class="op-cell"> <div class="op-cl">SEO initiatives</div> <div class="oi">Non-homepage SEO LPs: 1,000–1,200</div> <div class="oi">Off-page mentions: 600–700</div> <div class="oi">SEO purchase signals: 4,531</div> <div class="oi">Competitor pages: 300–350</div> </div> <div class="op-cell"> <div class="op-cl">Non-SEO initiatives</div> <div class="oi">Blog capture: feeder into nurture</div> <div class="oi">Nurture: 120–240</div> <div class="oi">/our-menu: 4,300 planning number</div> <div class="oi">Bridge pages: 264</div> </div> <div class="op-cell"> <div class="op-cl">September non-SEO math</div> <div class="oi">Blog capture target: ~1,000 leads/mo</div> <div class="oi">Nurture target: ~20 trials/mo</div> <div class="oi">/our-menu target: ~371–420 trials/mo</div> <div class="oi">Bridge pages: ~24 trials/mo</div> </div> <div class="op-cell"> <div class="op-cl">Most probable gap-closer</div> <div class="oi">Use existing /our-menu traffic</div> <div class="oi">Use existing A/B test</div> <div class="oi">Push from 0.45% toward 0.47–0.50%</div> <div class="oi">Expected payoff: test-driven lift that gets the combined plan to target</div> </div> <div class="op-cell"> <div class="op-cl">What remains true</div> <div class="oi">Blog is a capture channel first</div> <div class="oi">SEO supplies the largest annual lift</div> <div class="oi">/our-menu is the cleanest September lever</div> <div class="oi">Additional upside comes from bridge pages and high-intent expansion</div> </div> <div class="op-cell"> <div class="op-cl">Immediate focus</div> <div class="oi">Instrument /our-menu fully</div> <div class="oi">Ship top meal-plan CTAs</div> <div class="oi">Prioritize above-the-fold /our-menu changes</div> <div class="oi">Name aggressive expansion levers by June 30</div> </div> </div> <div class="op-foot"> <p><strong style="color:var(--ink)">Bottom line:</strong> this is the plan. It now uses a stretched <strong>/our-menu</strong> assumption of <strong>0.47–0.50%</strong>, worth roughly <strong>~4,300 trials/year</strong> and <strong>~371–420/month by September</strong>. That makes the plan stronger, but it still does not honestly fund the full <strong>13,402 aggressive September target</strong> without additional named levers. <em>Chefs to the People.</em></p> </div> </div>
+</div> <!-- ══════════ ONE-PAGER ══════════ --> <div class="sec" id="onepager"> <div class="ey">Plan summary</div> <h2 class="st">One-page brief</h2> <p class="ss">The full plan on one page. For sharing with the organic team or leadership.</p> <div class="op"> <div class="op-hdr"> <h2>CookUnity — Integrated Organic Growth Plan</h2> <p>April 2026 to April 2027 · Sam (non-SEO) + Juan (SEO) · pLTV $343/trial · pLTR $865/trial · Chefs to the People</p> </div> <div class="op-warn"> <div class="op-warn-lbl">September checkpoint</div> <p>This plan is built to reach <strong>11,241 organic trials/month by September</strong>. The strongest non-SEO scaling lever is <strong>/our-menu at 0.47–0.50% CVR</strong>, which lifts the page to roughly <strong>~371–420 trials/month by September</strong>.</p> </div> <div class="op-gap-bar"> <div class="op-gap-lbl">Core plan numbers</div> <div class="og"><div class="v">11,585</div><div class="l">annual initiative impact</div></div> <div class="op-arr"> · </div> <div class="og"><div class="v">11,241</div><div class="l">conservative Sep target</div></div> <div class="op-arr"> · </div> <div class="og"><div class="v">13,402</div><div class="l">aggressive Sep target</div></div> </div> <div class="op-grid"> <div class="op-cell"> <div class="op-cl">SEO initiatives</div> <div class="oi">Non-homepage SEO LPs: 1,000–1,200</div> <div class="oi">Off-page mentions: 600–700</div> <div class="oi">SEO purchase signals: 4,531</div> <div class="oi">Competitor pages: 300–350</div> </div> <div class="op-cell"> <div class="op-cl">Non-SEO initiatives</div> <div class="oi">Blog capture: feeder into nurture</div> <div class="oi">Nurture: 120–240</div> <div class="oi">/our-menu: 4,300 planning number</div> <div class="oi">Bridge pages: 264</div> </div> <div class="op-cell"> <div class="op-cl">September non-SEO math</div> <div class="oi">Blog capture target: ~1,000 leads/mo</div> <div class="oi">Nurture target: ~20 trials/mo</div> <div class="oi">/our-menu target: ~371–420 trials/mo</div> <div class="oi">Bridge pages: ~24 trials/mo</div> </div> <div class="op-cell"> <div class="op-cl">Most probable gap-closer</div> <div class="oi">Use existing /our-menu traffic</div> <div class="oi">Use existing A/B test</div> <div class="oi">Push from 0.45% toward 0.47–0.50%</div> <div class="oi">Expected payoff: test-driven lift that gets the combined plan to target</div> </div> <div class="op-cell"> <div class="op-cl">What remains true</div> <div class="oi">Blog is a capture channel first</div> <div class="oi">SEO supplies the largest annual lift</div> <div class="oi">/our-menu is the cleanest September lever</div> <div class="oi">Additional upside comes from bridge pages and high-intent expansion</div> </div> <div class="op-cell"> <div class="op-cl">Immediate focus</div> <div class="oi">Instrument /our-menu fully</div> <div class="oi">Ship top meal-plan CTAs</div> <div class="oi">Prioritize above-the-fold /our-menu changes</div> <div class="oi">Name aggressive expansion levers by June 30</div> </div> </div> <div class="op-foot"> <p><strong style="color:var(--ink)">Bottom line:</strong> this is the plan. It now uses a stretched <strong>/our-menu</strong> assumption of <strong>0.47–0.50%</strong>, worth roughly <strong>~4,300 trials/year</strong> and <strong>~371–420/month by September</strong>. That makes the plan stronger, but it still does not honestly fund the full <strong>13,402 aggressive September target</strong> without additional named levers. <em>Chefs to the People.</em></p> </div> </div>
 </div>
 <script>
 function show(id) { document.querySelectorAll('.sec').forEach(s => s.classList.remove('on')); document.querySelectorAll('.nb').forEach(b => b.classList.remove('active')); document.getElementById(id).classList.add('on'); const map = ['exec','perf','capture','initiatives','sep','monthly','phases','gap','gates','actions','onepager']; const btn = document.querySelectorAll('.nb')[map.indexOf(id)]; if (btn) btn.classList.add('active');
