@@ -56,9 +56,9 @@ body { font-family: var(--body); background: var(--surf3); color: var(--ink); fo
 .wordmark { font-family: var(--mono); font-size: 12px; letter-spacing: 0.09em; text-transform: uppercase; color: var(--accent); display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.72); border: 0.5px solid rgba(216,90,48,0.18); border-radius: 999px; padding: 5px 10px; }
 .wordmark::before { content: ''; width: 8px; height: 8px; background: var(--yellow); border-radius: 50%; display: inline-block; }
 .hdr h1 { font-family: var(--body); font-size: 56px; font-weight: 700; line-height: 1.02; margin-bottom: 16px; color: var(--white); letter-spacing: -0.04em; max-width: 980px; }
-.hdr p { margin-bottom: 6px; font-size: 20px; color: rgba(255,255,255,0.76); line-height: 1.55; max-width: 920px; }
+.hdr p { margin-bottom: 6px; font-size: 19px; color: rgba(255,255,255,0.74); line-height: 1.55; max-width: 920px; }
 .hdr-meta { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
-.meta-pill { font-family: var(--body); font-size: 13px; font-weight: 500; letter-spacing: 0; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.10); border-radius: 999px; padding: 8px 12px; color: rgba(255,255,255,0.88); } /* Nav */
+.meta-pill { font-family: var(--body); font-size: 12px; font-weight: 500; letter-spacing: 0; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.10); border-radius: 999px; padding: 7px 11px; color: rgba(255,255,255,0.82); } /* Nav */
 .nav { display: flex; gap: 10px; flex-wrap: wrap; margin: 24px 0 40px; }
 .nb { font-family: var(--body); font-size: 14px; font-weight: 600; letter-spacing: 0; text-transform: none; padding: 10px 16px; border-radius: 999px; border: 1px solid rgba(36,39,42,0.08); background: rgba(255,255,255,0.88); color: #3C4043; cursor: pointer; transition: all 0.12s; white-space: nowrap; }
 .nb:hover { background: var(--surf2); color: var(--ink); }
@@ -690,17 +690,33 @@ html {
 
 
 .meta-sub {
-  font-size: 12px;
-  color: rgba(255,255,255,0.55);
-  margin-top: 4px;
-  letter-spacing: 0.01em;
+  font-size: 11px;
+  color: rgba(255,255,255,0.42);
+  margin-top: 2px;
+  letter-spacing: 0.02em;
+  font-weight: 400;
 }
 
 </style>
 </head>
 <body>
 <div class="wrap"> <header class="hdr"> <div class="hdr-row"> <div> <div class="logo-lockup" aria-label="CookUnity logo"> <img class="logo-mark" src="https://cu-website-cms-prd.s3.us-east-1.amazonaws.com/CU_Logo_Horizontal_08_8814e397a9.svg" alt="CookUnity" /> </div> <div class="wordmark">Organic growth plan</div> <h1>Integrated Organic Growth Plan</h1> <p>Growth Action Plan · April 2026 to April 2027 · Built on real performance data and designed to scale organic growth with high-conviction levers</p>
-      <p class="meta-sub">Last updated April 2026 · Data through March 2026 · Source: Snowflake (GOLD_MARKETING.MARKETING_TRACKER)</p> <div class="hdr-meta"> <span class="meta-pill">April 2026 to April 2027</span> <span class="meta-pill">pLTV $343/trial</span> <span class="meta-pill">pLTR $865/trial</span> <span class="meta-pill">Conservative September checkpoint 11,241</span> <span class="meta-pill">Aggressive organic target 13,402</span> <span class="meta-pill">Initiative impact 11,585/yr</span> </div> </div> </div>
+      <p class="meta-sub">Last updated April 2026 · Data through March 2026 · Source: Snowflake (GOLD_MARKETING.MARKETING_TRACKER)</p> <div class="hdr-meta"> <span class="meta-pill">April 2026 to April 2027</span> <span class="meta-pill">pLTV $343/trial</span> <span class="meta-pill">pLTR $865/trial</span> <span class="meta-pill">Conservative September checkpoint 11,241</span> <span class="meta-pill">Aggressive organic target 13,402</span> <span class="meta-pill">Initiative impact 11,585/yr</span> </div>
+
+<!-- ══════════ RISKS / ASSUMPTIONS ══════════ -->
+
+<div class="sec">
+  <div class="ey">Risks</div>
+  <h2 class="st">What needs to be true</h2>
+  <p class="ss">These are the key assumptions required for the plan to deliver as expected.</p>
+
+  <div class="ins ib">
+    <div class="ins-l">Conversion execution <span class="conf-chip conf-medium">Owner: Sam</span></div>
+    <p>
+      /our-menu must reach the 0.47–0.50% CVR range. If this does not materialize, the majority of incremental lift does not land.
+    </p>
+    <p><strong>Success metric:</strong> /our-menu CVR reaches at least <strong>0.47%</strong> and trends toward <strong>0.50%</strong>.</p>
+   </div> </div>
 </header>
 
 <div class="objectives">
@@ -740,32 +756,22 @@ html {
 </div> <!-- ══════════ IMMEDIATE ACTIONS ══════════ --> <div class="sec" id="actions"> <div class="ey">Section 8</div> <h2 class="st">Next steps</h2> <p class="ss">These are the next moves required to execute the plan as written.</p> <div class="action"> <div class="an" style="background:var(--red)">1</div> <div> <span class="atag t-crit">Today · Sam + Eng</span> <h4>Instrument /our-menu completely</h4> <p>We need clean event tracking before the A/B read so the 0.45% → 0.47% stretch case can be evaluated confidently.</p> </div> </div> <div class="action"> <div class="an" style="background:var(--red)">2</div> <div> <span class="atag t-crit">Today · Sam</span> <h4>Ship mobile-first CTAs on the top “meal plan” pages</h4> <p>These pages already convert best. Capture infrastructure goes here first because it is the fastest path to the 1,000 leads/month September checkpoint.</p> </div> </div> <div class="action"> <div class="an" style="background:var(--amber)">3</div> <div> <span class="atag t-now">This week · Sam</span> <h4>Prioritize above-the-fold /our-menu changes</h4> <p>Value prop clarity, pricing visibility, and CTA simplification are the exact edits most likely to push the page slightly beyond 0.45% CVR.</p> </div> </div> <div class="action"> <div class="an" style="background:var(--amber)">4</div> <div> <span class="atag t-now">This week · Juan</span> <h4>Lock SEO initiative baselines into the dashboard</h4> <p>Use the operating values in the plan everywhere: 1,000–1,200, 600–700, 4,531, and 300–350.</p> </div> </div> <div class="action"> <div class="an" style="background:var(--blue)">5</div> <div> <span class="atag t-bld">Before June 30 · Sam + Juan</span> <h4>Name the next aggressive levers</h4> <p>After the /our-menu redesign lands, the next best expansion levers are more bridge pages, more meal-plan/high-intent pages, and deeper purchase-signal rollout.</p> </div> </div>
 </div> 
 
-<!-- ══════════ RISKS / ASSUMPTIONS ══════════ -->
-
-<div class="sec">
-  <div class="ey">Risks</div>
-  <h2 class="st">What needs to be true</h2>
-  <p class="ss">These are the key assumptions required for the plan to deliver as expected.</p>
+</div>
 
   <div class="ins ib">
-    <div class="ins-l">Conversion execution</div>
-    <p>
-      /our-menu must reach the 0.47–0.50% CVR range. If this does not materialize, the majority of incremental lift does not land.
-    </p>
-  </div>
-
-  <div class="ins ib">
-    <div class="ins-l">Traffic quality holds</div>
+    <div class="ins-l">Traffic quality holds <span class="conf-chip conf-medium">Owner: Sam</span></div>
     <p>
       Organic traffic must maintain current intent mix. A shift toward lower-intent traffic would reduce realized conversion gains.
     </p>
+    <p><strong>Success metric:</strong> high-intent pages and /our-menu maintain or improve current conversion efficiency through September.</p>
   </div>
 
   <div class="ins ib">
-    <div class="ins-l">SEO improvements compound</div>
+    <div class="ins-l">SEO improvements compound <span class="conf-chip conf-medium">Owner: Juan</span></div>
     <p>
       SEO initiatives must contribute incrementally through the second half of the year. The plan assumes continued indexing, ranking, and conversion improvements.
     </p>
+    <p><strong>Success metric:</strong> SEO improvements begin contributing measurable lift by mid-year and compound through the second half.</p>
   </div>
 
 </div>
