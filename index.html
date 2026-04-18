@@ -1124,6 +1124,103 @@ body {
   }
 }
 
+
+/* Final desktop layout fix */
+.doc-shell {
+  display: grid !important;
+  grid-template-columns: 160px minmax(0, 1fr) 180px !important;
+  gap: 20px !important;
+  max-width: 1180px !important;
+  margin: 0 auto !important;
+  align-items: start !important;
+}
+
+.left-rail {
+  width: 160px !important;
+  min-width: 160px !important;
+}
+
+.right-rail {
+  width: 180px !important;
+  min-width: 180px !important;
+}
+
+.doc-main {
+  max-width: 100% !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+}
+
+.rail-card {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+}
+
+.rail-link,
+.toc-link {
+  font-size: 13px !important;
+  line-height: 1.3 !important;
+  padding: 8px 10px !important;
+}
+
+/* Make overview stats fit the center column */
+.sg {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+  margin-bottom: 32px !important;
+}
+
+.stat {
+  min-width: 0 !important;
+  overflow: hidden !important;
+}
+
+.sv,
+.objectives .sv {
+  overflow-wrap: anywhere !important;
+  word-break: break-word !important;
+}
+
+.sb {
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+}
+
+@media (max-width: 1180px) {
+  .doc-shell {
+    grid-template-columns: 150px minmax(0, 1fr) !important;
+    max-width: 980px !important;
+  }
+  .right-rail {
+    display: none !important;
+  }
+  .left-rail {
+    width: 150px !important;
+    min-width: 150px !important;
+  }
+  .sg {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 860px) {
+  .doc-shell {
+    grid-template-columns: 1fr !important;
+    max-width: 100% !important;
+    gap: 0 !important;
+  }
+  .left-rail,
+  .right-rail {
+    display: none !important;
+  }
+  .sg {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 </style>
 </head>
 <body>
